@@ -1,0 +1,37 @@
+package fibonaccise;
+
+public class Main {
+
+	public static void main(String args[])
+	{
+		//n indicates number to be check prime or not
+		int n=19,m=0,flag=0;
+		m=n/2;
+		//we know 0 and 1 are not prime so here itself check the given number 
+		//is 0 or 1
+		if(n==0|n==1)
+		{
+			System.out.println(n+" "+"is not a prime number");
+		}
+		else 
+		{
+			//If the given number is not 0 or 1 the else
+			
+			for(int  i=2;i<=m;i++)
+			{
+				//If n completely divided by i then the given number is not prime 
+				//otherwise it is a prime number
+			if(n%i==0)
+			{
+				System.out.println(n+" "+"is  not a prime number");
+				flag=1;
+				break;
+			}
+			}
+			if(flag==0)
+			{
+				System.out.println(n+" "+"is a prime number");
+			}}}}
+		
+	
+

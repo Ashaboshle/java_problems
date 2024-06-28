@@ -1,0 +1,29 @@
+package someofcube;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[]args)
+	{
+		int sum=0;
+		int tot=0;
+		//Get lowest number which means starting num as input
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" Enter the lower no");
+		int lower=sc.nextInt();
+		//Get highest number which means ending num as input
+		System.out.println(" Enter the upper no");
+		int upper=sc.nextInt();
+		//for loop starts from lower num and end in higher num
+		for(int i=lower;i<=upper;i++)
+		{
+			//cubes the number and sum all the cubes store into sum
+			 sum+=(i*i*i);
+		}
+		//print sum of cubes
+		System.out.println("The sum of cubes="+sum);
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package decimaltobinary;
+
+public class Main {
+	
+	static  void decimaltobin(int n)
+	   {
+		 int i=0;
+		 int[] binvalue=new int[1000];
+		while(n>0)
+		{
+			//to store the remainder 
+		 binvalue[i]=n%2;
+		 //divide remaining numbers by 2
+		 n=n/2;
+		 //increment the position
+		 i++;
+	 }//print array in reversing order
+	 for(int j=i-1;j>=0;j--)
+	 
+		 System.out.print(binvalue[j]);
+	  }
+	 
+     public static void main(String args[])
+	 {
+		 
+		  int n=17;
+		  System.out.println("Decimal value="+n);
+		  System.out.print("Converted binary value=");
+		  decimaltobin(n);
+	 }
+
+}
